@@ -1,0 +1,75 @@
+body {
+
+    height: 97vh;
+  
+    background-position:
+      top 10px left 10px,
+      top 10px right 10px,
+      bottom 10px right 10px,
+      bottom 10px left 10px;
+    
+    background-size: 86px;
+    background-repeat: no-repeat;
+    
+    background-image:
+      url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-top-left.svg),
+      url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-top-right.svg),
+      url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-bottom-right.svg),
+      url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-bottom-left.svg);
+}
+
+#clockContainer {
+  margin: auto;
+  height: 40vw;
+  width: 40vw;
+  background-image: url(clock.png);
+  background-size: 100%;
+  position: relative;
+}
+
+#hour,
+#minute, .point{
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+#second {
+  position: absolute;
+  background: rgb(247, 4, 4);
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+/* .point{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 46%;
+  top: 46%;
+  background: rgb(0, 0, 0);
+} */
+
+#hour {
+  width: 2%;
+  height: 20%;
+  left: 48.33%;
+  top: 30.3%;
+  opacity: 0.8;
+}
+
+#minute {
+  width: 1.5%;
+  height: 29%;
+  left: 48.815%;
+  top: 21.3%;
+  opacity: 0.8;
+}
+
+#second {
+  width: 1%;
+  height: 37%;
+  left: 49.31%;
+  top: 13.3%;
+  opacity: 0.8;
+}
